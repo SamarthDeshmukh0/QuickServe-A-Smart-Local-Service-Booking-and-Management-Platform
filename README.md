@@ -138,3 +138,4 @@ QuickServe supports three primary user roles: **Customer**, **Service Provider**
 - View advanced analytics such as heatmaps and top-performing providers  
 
 ---
+--- ## 🎥 Demo Video 👉 [View Project Demo](https://drive.google.com/file/d/1jZ8Lnj2K0xOTgWTJXLjyM3p_mLbTA_Uw/view)
