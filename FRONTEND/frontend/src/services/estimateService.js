@@ -6,7 +6,8 @@
 import axios from "axios";
 
 // Flask runs on port 5001 — separate from Spring Boot (8080)
-const FLASK_URL = "http://localhost:5001";
+//const FLASK_URL = "http://localhost:5001";
+import { FLASK_BASE_URL } from "../utils/constants";
 
 /**
  * Call the Flask price estimator endpoint.
@@ -15,4 +16,4 @@ const FLASK_URL = "http://localhost:5001";
  * @returns Promise<AxiosResponse>
  */
 export const estimatePrice = (service, description) =>
-  axios.post(`${FLASK_URL}/estimate`, { service, description });
+  axios.post(`${FLASK_BASE_URL}/estimate`, { service, description });

@@ -43,4 +43,7 @@ export const BOOKING_STATUSES = {
 
 export const PLATFORM_FEE = 49;
 
-export const API_BASE_URL = "http://localhost:8080";
+//export const API_BASE_URL = "http://localhost:8080";
+
+export const API_BASE_URL = import.meta.env.VITE_SPRING_URL || "http://localhost:8080";
+export const FLASK_BASE_URL = import.meta.env.VITE_FLASK_URL || "http://localhost:5001";

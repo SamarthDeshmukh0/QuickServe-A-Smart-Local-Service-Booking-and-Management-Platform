@@ -6,8 +6,8 @@
 
 import axios from "axios";
 
-const FLASK_BASE = "http://localhost:5001";
-
+//const FLASK_BASE = "http://localhost:5001";
+import { FLASK_BASE_URL } from "../utils/constants";
 /**
  * Call Flask /forecast with the provider's monthly earnings data.
  *
@@ -17,7 +17,7 @@ const FLASK_BASE = "http://localhost:5001";
  * @returns Promise<AxiosResponse>
  */
 export const getEarningsForecast = (providerId, monthlyData) =>
-  axios.post(`${FLASK_BASE}/forecast`, {
+  axios.post(`${FLASK_BASE_URL}/forecast`, {
     provider_id:  providerId,
     monthly_data: monthlyData,
   });
