@@ -27,6 +27,34 @@ QuickServe addresses these challenges by offering:
 
 ---
 
+## 🚀 Key Features
+
+- AI-powered **provider recommendation system**
+- **Slot-based booking system** (prevents double booking)
+- Complete **booking lifecycle tracking**
+- **Role-based authentication** (Customer, Provider, Admin)
+- **Earnings dashboard & analytics for providers**
+- **Admin analytics with demand insights**
+- **Price estimation before booking**
+- **Emergency & group booking support**
+- **Skill badges for provider ranking**
+- **Heatmap-based demand visualization**
+
+---
+
+## 🏗️ System Architecture
+
+- **Spring Boot Backend (Main API)**  
+  Handles authentication, booking logic, slot management, payments, and business workflows.
+
+- **Python Flask Microservice (AI Engine)**  
+  Computes provider recommendation scores based on rating, experience, and proximity.
+
+- **React Frontend**  
+  Provides user interface for customers, providers, and admin dashboards.
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
