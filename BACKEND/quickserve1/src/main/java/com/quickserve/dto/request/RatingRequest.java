@@ -7,7 +7,7 @@ package com.quickserve.dto.request;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
-@Data
+//@Data
 public class RatingRequest {
 
     @NotNull

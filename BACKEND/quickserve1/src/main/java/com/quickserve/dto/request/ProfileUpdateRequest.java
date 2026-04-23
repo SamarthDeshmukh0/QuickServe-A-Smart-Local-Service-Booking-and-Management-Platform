@@ -6,12 +6,13 @@ package com.quickserve.dto.request;
 
 import lombok.Data;
 
-@Data
+//@Data
 public class ProfileUpdateRequest {
     private String name;
     private String phone;
     private String city;
     
+    public ProfileUpdateRequest() {}
 	public ProfileUpdateRequest(String name, String phone, String city) {
 		super();
 		this.name = name;

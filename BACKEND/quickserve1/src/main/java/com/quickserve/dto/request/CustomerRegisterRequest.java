@@ -7,7 +7,7 @@ package com.quickserve.dto.request;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
-@Data
+//@Data
 public class CustomerRegisterRequest {
 
     @NotBlank
@@ -29,6 +29,7 @@ public class CustomerRegisterRequest {
     @Size(min = 8)
     private String password;
     
+    public CustomerRegisterRequest() {}
     public CustomerRegisterRequest(String name, 
     								String email,
     								String phone,

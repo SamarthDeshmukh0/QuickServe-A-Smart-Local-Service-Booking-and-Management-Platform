@@ -7,7 +7,7 @@ package com.quickserve.dto.request;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
-@Data
+//@Data
 public class LoginRequest {
 
     @NotBlank
@@ -18,6 +18,7 @@ public class LoginRequest {
 
     private boolean rememberMe;
     
+    public LoginRequest() {}
     public LoginRequest(String email, String password,
     					boolean rememberMe) {
     	this.email=email;

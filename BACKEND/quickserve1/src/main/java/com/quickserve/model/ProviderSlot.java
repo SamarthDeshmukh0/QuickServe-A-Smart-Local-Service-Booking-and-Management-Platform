@@ -11,8 +11,6 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "provider_slots")
 @Data
-//@NoArgsConstructor
-//@AllArgsConstructor
 @Builder
 public class ProviderSlot {
 
@@ -38,6 +36,18 @@ public class ProviderSlot {
     
     //nor-args const
     public ProviderSlot() {}
+    
+    //constructor
+	public ProviderSlot(Long id, Long providerId, LocalDate slotDate, String slotTime, Boolean isBooked,
+			Long bookingId) {
+		super();
+		this.id = id;
+		this.providerId = providerId;
+		this.slotDate = slotDate;
+		this.slotTime = slotTime;
+		this.isBooked = isBooked;
+		this.bookingId = bookingId;
+	}
 
 	public Long getId() {
 		return id;

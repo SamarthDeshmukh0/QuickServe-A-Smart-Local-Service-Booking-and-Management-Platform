@@ -8,8 +8,8 @@ import lombok.Builder;
 import lombok.Data;
 import java.time.LocalDate;
 
-@Data
-@Builder
+//@Data
+//@Builder
 public class SlotResponse {
     private Long id;
     private Long providerId;

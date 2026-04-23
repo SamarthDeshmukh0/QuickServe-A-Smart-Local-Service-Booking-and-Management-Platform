@@ -10,8 +10,8 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
-@Builder
+//@Data
+//@Builder
 public class EarningsResponse {
     private Double total;
     private Double thisMonth;
@@ -121,8 +121,7 @@ public class EarningsResponse {
 
 
 
-	@Data
-    @Builder
+
     public static class MonthlyEarning {
         private String month;
         private Double amount;
@@ -154,8 +153,9 @@ public class EarningsResponse {
         
     }
 
-    @Data
-    @Builder
+
+    
+    
     public static class EarningHistoryItem {
         private java.time.LocalDateTime earnedAt;
         private String customerName;

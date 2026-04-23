@@ -7,7 +7,7 @@ package com.quickserve.dto.request;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
-@Data
+//@Data
 public class PaymentRequest {
 
     @NotNull
@@ -20,6 +20,7 @@ public class PaymentRequest {
     @NotBlank
     private String method;
     
+    public PaymentRequest() {}
     public PaymentRequest(Long bookingId, Double amount, String method) {
     	this.bookingId=bookingId;
     	this.amount=amount;

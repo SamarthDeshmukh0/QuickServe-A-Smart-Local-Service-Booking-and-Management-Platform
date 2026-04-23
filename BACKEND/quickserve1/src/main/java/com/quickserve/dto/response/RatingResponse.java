@@ -8,8 +8,8 @@ import lombok.Builder;
 import lombok.Data;
 import java.time.LocalDateTime;
 
-@Data
-@Builder
+//@Data
+//@Builder
 public class RatingResponse {
     private Long id;
     private Long bookingId;
