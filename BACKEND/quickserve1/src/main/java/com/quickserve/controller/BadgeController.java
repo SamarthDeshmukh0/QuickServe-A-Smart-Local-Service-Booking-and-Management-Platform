@@ -8,14 +8,12 @@ import com.quickserve.dto.request.BadgeAssignRequest;
 import com.quickserve.dto.response.BadgeResponse;
 import com.quickserve.service.BadgeService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-//@RequiredArgsConstructor
 public class BadgeController {
 
     private final BadgeService badgeService;

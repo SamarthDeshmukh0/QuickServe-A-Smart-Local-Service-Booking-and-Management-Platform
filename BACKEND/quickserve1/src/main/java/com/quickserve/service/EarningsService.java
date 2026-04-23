@@ -10,7 +10,7 @@ import com.quickserve.model.Earnings;
 import com.quickserve.model.Payment;
 import com.quickserve.model.User;
 import com.quickserve.repository.*;
-import lombok.RequiredArgsConstructor;
+//import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.*;
@@ -19,7 +19,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class EarningsService {
 
     private final EarningsRepository earningsRepository;

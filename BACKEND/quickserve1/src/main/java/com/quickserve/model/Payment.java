@@ -5,15 +5,15 @@
 package com.quickserve.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+//import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "payments")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Builder
 public class Payment {
 
     @Id
@@ -31,7 +31,7 @@ public class Payment {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "payment_status", nullable = false)
-    @Builder.Default
+   // @Builder.Default
     private PaymentStatus paymentStatus = PaymentStatus.SUCCESS;
 
     @Column(name = "paid_at")

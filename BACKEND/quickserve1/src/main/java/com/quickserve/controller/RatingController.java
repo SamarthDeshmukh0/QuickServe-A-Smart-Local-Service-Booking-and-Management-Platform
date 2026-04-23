@@ -8,7 +8,6 @@ import com.quickserve.dto.request.RatingRequest;
 import com.quickserve.dto.response.RatingResponse;
 import com.quickserve.service.RatingService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/ratings")
-@RequiredArgsConstructor
 public class RatingController {
 
     private final RatingService ratingService;

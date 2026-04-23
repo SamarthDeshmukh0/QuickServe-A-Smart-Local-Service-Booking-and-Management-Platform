@@ -8,13 +8,12 @@ import com.quickserve.dto.request.PaymentRequest;
 import com.quickserve.dto.response.PaymentResponse;
 import com.quickserve.service.PaymentService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/payments")
-@RequiredArgsConstructor
+
 public class PaymentController {
 
     private final PaymentService paymentService;

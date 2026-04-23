@@ -5,15 +5,11 @@
 package com.quickserve.model;
 
 import jakarta.persistence.*;
-import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "earnings")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+
 public class Earnings {
 
     @Id

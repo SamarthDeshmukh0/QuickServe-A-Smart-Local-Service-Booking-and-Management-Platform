@@ -11,8 +11,8 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "provider_slots")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 @Builder
 public class ProviderSlot {
 

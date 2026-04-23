@@ -7,13 +7,13 @@ package com.quickserve.controller;
 import com.quickserve.dto.request.ProfileUpdateRequest;
 import com.quickserve.model.User;
 import com.quickserve.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
+//import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/customers")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class CustomerController {
 
     private final UserRepository userRepository;

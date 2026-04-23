@@ -9,7 +9,6 @@ import com.quickserve.dto.response.EarningsResponse;
 import com.quickserve.dto.response.ProviderResponse;
 import com.quickserve.service.EarningsService;
 import com.quickserve.service.ProviderService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/providers")
-@RequiredArgsConstructor
+
 public class ProviderController {
 
     private final ProviderService providerService;

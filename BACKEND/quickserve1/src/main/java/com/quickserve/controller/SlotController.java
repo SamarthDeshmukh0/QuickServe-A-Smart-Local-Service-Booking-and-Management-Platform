@@ -8,7 +8,6 @@ import com.quickserve.dto.request.SlotRequest;
 import com.quickserve.dto.response.SlotResponse;
 import com.quickserve.service.SlotService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/slots")
-@RequiredArgsConstructor
+
 public class SlotController {
 
     private final SlotService slotService;
